@@ -1,2 +1,2 @@
-# About-me
+# Tech-company
 Coding practice
