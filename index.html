@@ -1,114 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Rollins Tech Company</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .poster {
-            width: 100%;
-            max-width: 800px;
-            height: 600px;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            border-radius: 20px;
-            padding: 60px 40px;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .logo-section {
-            font-size: 48px;
-            font-weight: bold;
-            color: #00d4ff;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 0 4px 15px rgba(0, 212, 255, 0.5);
-        }
-        .tagline {
-            font-size: 24px;
-            font-weight: 300;
-            margin: 20px 0;
-            color: #e0e0e0;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin: 40px 0;
-            gap: 20px;
-        }
-        .feature {
-            flex: 1;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-        }
-        .feature-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-        .feature-text {
-            font-size: 14px;
-            color: #b0b0b0;
-        }
-        .cta {
-            background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
-            color: #1e3c72;
-            padding: 15px 40px;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .cta:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="poster">
-        <div class="logo-section">
-            ⚡ Rollins Tech Vision
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="tagline">
-            Innovation That Transforms Tomorrow
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm a Developer</h1>
+            <p>Creating beautiful and functional web experiences</p>
+            <a href="#projects" class="cta-button">View My Work</a>
         </div>
-        <div class="features">
-            <div class="feature">
-                <div class="feature-icon">🚀</div>
-                <div class="feature-text">Cutting-Edge Solutions</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🔒</div>
-                <div class="feature-text">Enterprise Security</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">☁️</div>
-                <div class="feature-text">Cloud-Powered</div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer with expertise in web technologies. I love building responsive, user-friendly applications.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Description of your amazing project</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Description of your amazing project</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Description of your amazing project</p>
+                </div>
             </div>
         </div>
-        <button class="cta">Get Started Today</button>
-    </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn | GitHub | Twitter</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+    </footer>
+</body>
 </html>
